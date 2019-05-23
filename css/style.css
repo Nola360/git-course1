@@ -1,4 +1,10 @@
 body {
-  background-color: black;
+  background-color: #fff;
 }
 
+img {
+  margin-top: 10px;
+  width: 400px;
+  height: 400px;
+  filter: grayscale(100%);
+}
