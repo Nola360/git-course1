@@ -2,6 +2,12 @@ body {
   background-color: #fff;
 }
 
+h2 {
+  font-size: 60px;
+  text-align: center;
+  font-family: times, Arial, helvetica, sans-serif;
+}
+
 img {
   margin-top: 10px;
   width: 400px;
