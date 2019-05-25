@@ -35,3 +35,28 @@ img:hover {
   grid-auto-rows: minmax(100px, auto);
   grid-gap: 1em;
 }
+
+.wrapper2 {
+  margin: 0 100px 0 100px;;
+}
+
+.grid1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
+  /* grid-auto-rows: minmax(50px, auto); */
+  background-color: grey;
+  
+}
+
+.grid1 {
+  
+}
+
+
+
+h3 {
+  text-align: center;
+  font-size:60px;
+  font-family: times;
+}
