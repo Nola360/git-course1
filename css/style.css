@@ -26,7 +26,7 @@ img {
 
 img:hover {
   cursor: pointer;
-  filter: invert(100%)
+  /* filter: invert(100%) */
 }
 
 .grid {
@@ -36,26 +36,33 @@ img:hover {
   grid-gap: 1em;
 }
 
+.box {
+  /* text-align: center; */
+}
+
 .wrapper2 {
-  margin: 0 100px 0 100px;;
+  
+  margin: 30px 100px 0 100px;
 }
 
 .grid1 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1em;
+  /* grid-auto-rows: minmax(auto, 100px); */
+  /* grid-gap: 1em; */
+
   /* grid-auto-rows: minmax(50px, auto); */
-  background-color: grey;
+  /* background-color: grey; */
   
 }
 
-.grid1 {
-  
+.content {
+  width: 250px;
+  height: 250px;
 }
-
-
 
 h3 {
+  margin: 30px 0 0 0;
   text-align: center;
   font-size:60px;
   font-family: times;
