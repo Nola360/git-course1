@@ -38,6 +38,9 @@ img:hover {
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: minmax(100px, auto);
   grid-gap: 1em;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
 }
 
 .box {
@@ -52,6 +55,9 @@ img:hover {
 .grid1 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
   /* padding: 40px; */
   /* grid-auto-rows: minmax(auto, 100px); */
   /* grid-gap: 1em; */
@@ -82,13 +88,16 @@ h3 {
   display: grid;
   grid-template-columns: repeat(3 , 1fr);
   grid-gap: 1em;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
   /* margin-right: 30px; */
 }
 
 .test, .test2, .test3 {
   background: green;
   padding: 30px;
-  grid-gap: 1em;
+  grid-gap: 1px;
 }
 
 .test p, .test2 p, .test3 p {
@@ -111,7 +120,9 @@ h3 {
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: minmax(400px, auto);
   grid-gap: 1em;
-  padding: 0;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
 }
 
 .grid4 > div {
@@ -150,4 +161,32 @@ input {
   font-size: 30px;
   text-align: center;
   padding: 3px;
+}
+
+.sponsors {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+.sponsors p {
+  text-align: center;
+}
+
+.pp {
+  text-align: center;
+  padding: 30px;
+}
+
+.w{
+  width: 150px;
+  height: 150px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 50px;
+  background-color: darkgrey;
+  grid-auto-rows: minmax(325px, auto);
 }
