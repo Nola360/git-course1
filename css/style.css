@@ -5,10 +5,14 @@
 
 body {
   background-color: #fff;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
 }
 
 .wrapper {
-  margin: 0 100px 0 100px;; 
+  margin: 0 100px 0 100px;
 } 
 
 h2 {
@@ -40,10 +44,10 @@ img:hover {
   /* text-align: center; */
 }
 
-.wrapper2 {
+/* .wrapper2 {
   
   margin: 30px 100px 0 100px;
-}
+} */
 
 .grid1 {
   display: grid;
@@ -66,4 +70,34 @@ h3 {
   text-align: center;
   font-size:60px;
   font-family: times;
+}
+
+/* .wrapper3 {
+  
+  margin: 30px 100px 0 100px;
+} */
+
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3 , 1fr);
+  grid-gap: 1em;
+  /* margin-right: 30px; */
+}
+
+.test, .test2, .test3 {
+  background: green;
+  padding: 30px;
+  grid-gap: 1em;
+}
+
+.test p, .test2 p, .test3 p {
+  margin-top: 1em;
+  padding: 1em;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.t {
+  width: 350px;
+  height: 350px;
 }
