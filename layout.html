@@ -34,10 +34,164 @@
     margin: 0 100px 0 100px;
   }
   
+  body {
+    text-align: center;
+  } 
+  
+  
+  .title {
+    font-family: impact;
+    font-size: 45px;
+    color: lightcoral;
+    position: relative;
+    background-color: tan;
+    display: inline-block;
+    /* height: 100px; */
+  }
+  
+  .title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left:0;
+    height: 4px;
+    width: 100%;
+    background-color: green;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 450ms ease;
+  }
+  
+  
+  .title:hover::after {
+    transform: scale(1);
+    transform-origin: left;
+  }
+  .fancy-link {
+    text-decoration: none;
+    color: lightcoral;
+    position: relative; /*keeps position in perspective*/
+    
+    
+  }
+  
+  /* pseudo elements */
+  
+  .fancy-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: turquoise;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+    
+    
+  }
+  .fancy-link:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+    border-radius: 5px;
+  }
+  
+  .link2 {
+    text-decoration: none;
+    position: relative;
+    color: lightcoral;
+    
+  }
+  
+  .link2::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: turquoise;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 450ms ease;
+    
+  }
+  
+  .link2:hover::after {
+    transform: scaleY(1);
+    transform-origin: bottom;
+  }
+  
+  .scale {
+    /* background-color: tan; */
+    /* display: block; */
+    height: 100px;
+    width: 100%;
+    position: relative;
+  }
+  
+  .scale::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: pink;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 2050ms ease;
+    
+  }
+  
+  .scale:hover::after {
+    transform: scale(1);
+    transform-origin: left;
+    
+  }
+  
+    .scale:hover::after {
+    font-size: 50px;
+    
+  }
+  
+  /* .scale1 {
+    background-color: pink;
+  }
+  
+   .scale2 {
+    background-color: orange;
+  } 
+  
+  .scale3 {
+    background-color: turquoise;
+  }
+  
+  .scale4 {
+    background-color: lightgreen;;
+  }
+  
+  .scale5 {
+    background-color: white
+  }
+  
+  .scale6 {
+    background-color: indianred;
+  }
+  
+  .scale7 {
+    background-color: purple;
+  }
+  
+  .scale8 {
+    background-color: black;;
+  } */
+  
   </style>
 </head>
 <body>
-  <div class="wrapper">
+  <!-- <div class="wrapper">
     <div class="grid">
       <div class="box box1">
         <p>Map</p>
@@ -48,6 +202,22 @@
       <div class="box box3">Box 3</div>
       <div class="box box4">Box 4</div>
     </div>
-  <div>
+  <div> -->
+    
+    
+      <h1 class="title">This is a test</h1>
+      <br>
+      <a href="#" class="fancy-link">This is a test to see</a> transform properties <a href="#" class="fancy-link">in action. </a>This is the next level in <a href="#" class="link2">transform properties.</a> In addition to <a href="#" class="fancy-link">left to right transformations</a>, we can also display <a href="#" class="link2">up and down transformations</a> as well.
+      <br>
+      
+      <div class="scale scale1"><p class="show">Home</p></div>
+      <div class="scale scale2"><p>About</p></div>
+      <div class="scale scale3"><p>Support</p></div>
+      <div class="scale scale4"><p>Contact</p></div>
+      <div class="scale scale5"><p>Menu</p></div>
+      <div class="scale scale6"><p>Product</p></div>
+      <div class="scale scale7"><p>Location</p></div>
+      <div class="scale scale8"><p>Sale</p></div>
+      
 </body>
 </html>
