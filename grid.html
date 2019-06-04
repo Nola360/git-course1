@@ -13,7 +13,7 @@
     grid-template-areas: 
     "header header header header"
     "nav nav nav nav"
-    "section section aside aside"
+    "section section box1 aside"
     "main main box1 box2"
     "main main box1 box2"
     "footer footer footer footer";
@@ -25,7 +25,30 @@
   }
   
   .header {
+    /* margin-top: 100px; */
+    /* height: 50px; */
     grid-area: header;
+    /* position: sticky; */
+    background-color: tan;
+    top: 0;
+    left: 0;
+  }
+  
+  
+  #home {
+    background-color: red;
+  }
+  
+  #away {
+    background-color: orange;
+  }
+  
+  #meet {
+    background-color: yellow;
+  }
+  
+  #greet{
+    background-color: blue;
   }
   
   .nav {
@@ -56,12 +79,43 @@
     grid-area: box2;
   }
   
+  ul {
+    margin: 0;
+  }
+  nav ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
+    list-style: none;
+    padding: 0;
+    position: relative;
+    align-content: end;
+    top: 25%;
+  }
+  
+  nav a {
+    text-decoration: none;
+    display: block;
+    padding: 3px;
+    background-color: skyblue;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  
+  nav a:hover {
+    background-color: royalblue;
+    color: white;
+  }
   @media (max-width: 700px) {
     
     body {
       background-color: purple;
     }
     
+    .header {
+     
+    }
     .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -70,6 +124,7 @@
     grid-gap: 1em;
     margin: 0 auto;
     grid-template-areas: 
+    
     "header header header header"
     "nav nav nav nav"
     "section section aside aside"
@@ -91,7 +146,14 @@
 <body>
   
   <div class="container">
-        <div class="header">Header</div>
+        <nav class="header">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#away">Away</a></li>
+              <li><a href="#meet">Meet</a></li>
+              <li><a href="#greet">Greet</a></li>
+            </ul>
+        </nav>
         <div class="nav">Nav</div>
         <div class="section">Section</div>
         <div class="aside">Aside</div>
@@ -99,7 +161,134 @@
         <div class="footer">Footer</div>
         <div class="box1">Box 1</div>
         <div class="box2">Box 2</div>
-      </div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div id="away">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div id="meet">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div id="greet">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div class="box3">Box 3</div>
+        <div id="home">Box 3</div>
+        
+    </div>
   
 </body>
 </html>
