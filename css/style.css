@@ -13,9 +13,10 @@ body {
 
 .wrapper  {
   /* width: 400%; */
-  margin: 0 90px 0 90px;
+  max-width: 1255px;
+  margin: 0 auto;
   /* background-color: yellow; */
-  /* padding: 0px; */
+  padding: 0px;
 } 
 
 h2 {
@@ -59,6 +60,7 @@ img:hover {
   width: 88%;
   margin: 0 90px 0 90px;
   margin-bottom: 40px;
+  grid-area: nav;
 
 
 }
@@ -283,10 +285,19 @@ body {
   background-color: green;
 }
  
- .grid {
-   display: grid;
-  grid-template-columns: 400px;
+ .wrapper {
+   max-width: 420px;
+   margin: 0 auto;
  }
+ .grid {
+  display: grid;
+  grid-template-columns: 400px;
+  grid-template-areas:
+  "navbox" 
+  "section";
   
+ }
+ 
+ 
   
 }
