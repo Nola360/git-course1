@@ -3,6 +3,13 @@
 <head>
   <style>
   
+  
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Congtainer */
   .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -17,24 +24,25 @@
     "main main box1 box2"
     "main main box1 box2"
     "footer footer footer footer";
-    
   }
   
   .container > div {
     background-color: skyblue;
   }
   
+  /* Header */
+  
   .header {
     /* margin-top: 100px; */
     /* height: 50px; */
     grid-area: header;
-    /* position: sticky; */
+    position: sticky;
     background-color: tan;
     top: 0;
     left: 0;
   }
   
-  
+  /* Misc Colors */
   #home {
     background-color: red;
   }
@@ -51,6 +59,7 @@
     background-color: blue;
   }
   
+  /* Grid Areas */
   .nav {
     grid-area: nav;
   }
@@ -79,6 +88,7 @@
     grid-area: box2;
   }
   
+ /* Naviqation */
   ul {
     margin: 0;
   }
@@ -107,15 +117,15 @@
     background-color: royalblue;
     color: white;
   }
+  
+  /* Media Queries */
+  
   @media (max-width: 700px) {
     
     body {
       background-color: purple;
     }
-    
-    .header {
-     
-    }
+  
     .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
